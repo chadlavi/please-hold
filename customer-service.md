@@ -1,0 +1,3 @@
+- Press 1 to [return to the main menu](index).
+- Press 2 to [learn more about our products](learn-more).
+- Press 3 to [hear our business hours and location](location).

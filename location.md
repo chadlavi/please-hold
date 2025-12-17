@@ -1,0 +1,3 @@
+- Press 1 to [return to the main menu](index).
+- Press 2 to [learn more about our products](learn-more).
+- Press 3 to [speak with a customer service representative](customer-service).
