@@ -2,3 +2,39 @@
 ---
 
 @import "{{ site.theme }}";
+
+:root {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background: none;
+  color: inherit;
+  font-size: 16px;
+  font-family: monospace;
+
+  main {
+    max-width: 80ch;
+    margin-inline: auto;
+    margin-block: 2rem;
+
+    p,
+    ul,
+    ol {
+      margin-block: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+
+      li::marker {
+        content: "→ ";
+      }
+    }
+
+    a {
+      color: #00ff00;
+    }
+  }
+}
