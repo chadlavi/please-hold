@@ -8,6 +8,11 @@
   color: white;
 }
 
+::selection {
+  color: black;
+  background: white;
+}
+
 body {
   background: none;
   color: inherit;
@@ -17,6 +22,7 @@ body {
   main {
     max-width: 80ch;
     margin-inline: auto;
+    padding-inline: 1rem;
     margin-block: 2rem;
 
     p,
@@ -25,12 +31,46 @@ body {
       margin-block: 1rem;
     }
 
+    hr {
+      margin-block: 1rem;
+      border-bottom: 1px solid #444;
+    }
+
+    blockquote {
+      border: 1px solid #444;
+      box-shadow: 4px 4px 0px #303030;
+      padding: 1rem;
+
+      & > *:first-child {
+        margin-block-start: 0px;
+      }
+      & > *:last-child {
+        margin-block-end: 0px;
+      }
+    }
+
+    ol,
     ul {
-      padding-left: 1rem;
+      ol,
+      ul {
+        margin-block: 0 !important;
+      }
+    }
+
+    ol {
+      padding-left: 1.7rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
 
       li::marker {
         content: "→ ";
       }
+    }
+
+    li > p {
+      margin-block: 0 !important;
     }
 
     a {
